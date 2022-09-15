@@ -80,7 +80,7 @@ $ conda activate DualHINet & python demo.py
 #####  output/<model name>/ and temp/ directories created by demo.py
   
 ## Example Result  
-![CBT integration](CBT_integration.png)
+![CBT-integration](CBT_integration.png)
 The figure demonstrates an example of output for a population of 155 ASD subjects where each subject has 6 views (each represented by 35 by 35 matrix). Our code takes in a numpy array of size [155, 35, 35, 6] and outputs a 35 by 35 matrix.
 
 
