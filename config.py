@@ -1,3 +1,5 @@
+# For Dual-HINet, you can configure the model and training parameters here.
+
 # Train on simulated data (S, normal random dist.) or external data (E)
 Dataset = "S"
 

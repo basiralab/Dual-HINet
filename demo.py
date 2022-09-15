@@ -10,7 +10,6 @@ if not os.path.exists('output'):
 if not os.path.exists('res'):
     os.makedirs('res')
 
-
 Dual_HINet.train_model(CONFIG["X"],
                     model_params=MODEL_PARAMS,
                     n_max_epochs=CONFIG["N_max_epochs"],

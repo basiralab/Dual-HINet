@@ -44,7 +44,7 @@ def generate_subject_biased_cbts(model, train_data):
     """
         Generates all possible CBTs for a given training set.
         Args:
-            model: trained DGN model
+            model: trained Dual-HINet model
             train_data: list of data objects
     """
     model.eval()
@@ -64,7 +64,7 @@ def generate_cbt_median(model, train_data):
     """
         Generate optimized CBT for the training set (use post training refinement)
         Args:
-            model: trained DGN model
+            model: trained Dual-HINet model
             train_data: list of data objects
     """
     model.eval()
@@ -82,7 +82,7 @@ def mean_frobenious_distance(generated_cbt, test_data):
     """
         Calculate the mean Frobenious distance between the CBT and test subjects (all views)
         Args:
-            generated_cbt: trained DGN model
+            generated_cbt: trained Dual-HINet model
             test_data: list of data objects
     """
     frobenius_all = []
@@ -133,7 +133,7 @@ def mae_to_subjects(generated_cbt, test_data):
     """
         Calculate the mean Frobenious distance between the CBT and test subjects (all views)
         Args:
-            generated_cbt: trained DGN model
+            generated_cbt: trained Dual-HINet model
             test_data: list of data objects
     """
     MAEs = []
@@ -207,7 +207,6 @@ def train_model(X, model_params, n_max_epochs, early_stop, model_name, random_sa
         test_errors = []
         tick = time.time()
 
-        # >---------------------->
         if model_params["num_pooling"] != 0:
             assign_ratio = math.pow(model_params["final_num_clusters"] / N_ROIs, 1 / model_params["num_pooling"])
         else:

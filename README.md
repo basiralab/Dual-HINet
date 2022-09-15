@@ -37,7 +37,7 @@ This code was implemented using Python 3.8 (Anaconda) on Windows 10.
 ## Installation
 ### *Anaconda Installattion*
 * Go to  https://www.anaconda.com/products/individual
-* Download version for your system (We used Python 3.8  on 64bit Windows 10 )
+* Download version for your system (We used Python 3.8  on 64bit Windows 10)
 * Install the platform
 * Create a conda environment by typing:  ```conda create –n DualHINet pip python=3.8 ```
 
@@ -62,7 +62,7 @@ In case you want to use Dual-HINet on your multi-graphs, we represent each brain
 ## Run Dual-HINet
 To run our code, open up a terminal at Dual-HINet’s directory and type in
 ```sh
-$ conda activate DualHINet & python main.py
+$ conda activate DualHINet & python demo.py
 ```
 #####  You may edit config.py to tune hyperparameters, configure training or supply your own dataset.
 
@@ -77,7 +77,7 @@ $ conda activate DualHINet & python main.py
 | simulated dataset/example.py | A simulated dataset that shows the required data format.                                                        |
 | res/"model name"/            | After the training, this directory includes model parameters, final CBT, and subject biased CBTs for each fold. |
 | temp/                       | Includes interim model parameters that are saved for each 10 epoch. Deleted after the training.                 |
-#####  output/<model name>/ and temp/ directories created by main.py
+#####  output/<model name>/ and temp/ directories created by demo.py
   
 ## Example Result  
 ![CBT integration](CBT_integration.png)
@@ -88,7 +88,7 @@ The figure demonstrates an example of output for a population of 155 ASD subject
 
 To install and run Dual-HINet, check the following YouTube video: 
 
-...
+https://www.youtube.com/watch?v=Q_hyobvxpDY
 
 To learn about how Dual-HINet works, check the following YouTube video: 
 

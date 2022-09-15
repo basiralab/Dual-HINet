@@ -1,0 +1,1 @@
+{'N_ROIs': 35, 'learning_rate': 0.0005, 'n_attr': 4, 'input_dim': 1, 'hidden_dim': 25, 'embedding_dim': 5, 'num_layers': 3, 'num_pooling': 1, 'final_num_clusters': 3, 'not_ablated': True, 'is_joint_S_loss': False, 'S_loss_weight': 0.1}
