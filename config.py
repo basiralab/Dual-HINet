@@ -9,7 +9,7 @@ Dataset = "S"
 Path =  "./simulated dataset/example.mat"
 
 # Number of simulated subjects (overwriten if Dataset = "E")
-N_Subjects = 150
+N_Subjects = 50
 # Number of nodes for simulated brain networks (overwriten if Dataset = "E")
 N_Nodes = 35
 # Number of brain views (overwriten if Dataset = "E")

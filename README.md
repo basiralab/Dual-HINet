@@ -1,6 +1,6 @@
 # Dual-HINet: Dual Hierarchical Integration Network (Dual-HINet)
 
-How to capture modualrity and integrate a set of multigraphs into a single graph?
+How to capture modularity and integrate a set of multi-graphs into a single graph?
 
 Please contact fatihdedi18@gmail.com for inquiries. Thanks. 
 
@@ -80,7 +80,8 @@ $ conda activate DualHINet & python demo.py
 #####  output/<model name>/ and temp/ directories created by demo.py
   
 ## Example Result  
-![CBT-integration](CBT_integration.png)
+![CBT integration](CBT_integration.png)
+
 The figure demonstrates an example of output for a population of 155 ASD subjects where each subject has 6 views (each represented by 35 by 35 matrix). Our code takes in a numpy array of size [155, 35, 35, 6] and outputs a 35 by 35 matrix.
 
 
@@ -92,7 +93,7 @@ https://www.youtube.com/watch?v=Q_hyobvxpDY
 
 To learn about how Dual-HINet works, check the following YouTube video: 
 
-...
+https://www.youtube.com/watch?v=xpK5FMFWrMc
 
 ## Relevant References
 Fey, M. & Lenssen, J. E. Fast graph representation learning with PyTorch Geometric. In ICLR Workshop on Representation Learning on Graphs and Manifolds (2019).
@@ -105,11 +106,22 @@ Adam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan, Edward Yang, Zachary D
 
 ## Please cite the following paper when using Dual-HINet
 ```latex
-  @inproceedings{duranbeyazrekik2022,
-    title={Dual-HINet: Dual Hierarchical Integration Network of Multigraphs for Connectional Brain Template Learning},
-    author={Duran, Fatih Said and Beyaz, Abdurrahman and Rekik, Islem},
-    booktitle={Medical Image Computing and Computer Assisted Intervention},
-    year={2022},
-    organization={Springer}
-  }
+  @InProceedings{10.1007/978-3-031-16431-6_29,
+author="Duran, Fatih Said
+and Beyaz, Abdurrahman
+and Rekik, Islem",
+editor="Wang, Linwei
+and Dou, Qi
+and Fletcher, P. Thomas
+and Speidel, Stefanie
+and Li, Shuo",
+title="Dual-HINet: Dual Hierarchical Integration Network of Multigraphs for Connectional Brain Template Learning",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2022",
+year="2022",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="305--314",
+abstract="A connectional brain template (CBT) is a normalized representation of a population of brain multigraphs, where two anatomical regions of interests (ROIs) are connected by multiple edges. Each edge captures a particular type of interaction between pairs of ROIs (e.g., structural/functional). Learning a well-centered and representative CBT of a particular brain multigraph population (e.g., healthy or atypical) is a means of modeling complex and varying ROI interactions in a holistic manner. Existing methods generate CBTs by locally integrating heterogeneous multi-edge attributes (e.g., weights and features). However, such methods are agnostic to brain network modularity as they ignore the hierarchical structure of neural interactions. Furthermore, they only perform node-level integration at the individual level without learning the multigraph representation at the group level in a layer-wise manner. To address these limitations, we propose Dual Hierarchical Integration Network (Dual-HINet) for connectional brain template estimation, which simultaneously learns the node-level and cluster-level integration processes using a dual graph neural network architecture. We also propose a novel loss objective to jointly learn the clustering assignment across different edge types and the centered CBT representation of the population multigraphs. Our Dual-HINet significantly outperforms state-of-the-art methods for learning CBTs on a large-scale multigraph connectomic datasets. Our source code can be found at https://github.com/basiralab/Dual-HINet.",
+isbn="978-3-031-16431-6"
+}
 ```
